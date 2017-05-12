@@ -105,12 +105,12 @@
 				B5C1B23D1EC568FD008B136A /* Image+CoreDataClass.swift */,
 				B5C1B23F1EC568FD008B136A /* Store+CoreDataClass.swift */,
 				B5C1B2411EC568FD008B136A /* ItemType+CoreDataClass.swift */,
-				B5C1B24C1EC56959008B136A /* Extensions */,
+				B5C1B24C1EC56959008B136A /* Generated */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		B5C1B24C1EC56959008B136A /* Extensions */ = {
+		B5C1B24C1EC56959008B136A /* Generated */ = {
 			isa = PBXGroup;
 			children = (
 				B5C1B23C1EC568FD008B136A /* Item+CoreDataProperties.swift */,
@@ -118,7 +118,7 @@
 				B5C1B2401EC568FD008B136A /* Store+CoreDataProperties.swift */,
 				B5C1B2421EC568FD008B136A /* ItemType+CoreDataProperties.swift */,
 			);
-			name = Extensions;
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

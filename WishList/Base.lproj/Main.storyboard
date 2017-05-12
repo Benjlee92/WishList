@@ -38,66 +38,74 @@
                                 <rect key="frame" x="16" y="108" width="343" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="151" id="dpW-aR-iPg" customClass="ItemCell" customModule="WishList" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="151" id="dpW-aR-iPg" customClass="ItemCell" customModule="WishList">
                                         <rect key="frame" x="0.0" y="28" width="343" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dpW-aR-iPg" id="vxP-Ki-wss">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tsla" translatesAutoresizingMaskIntoConstraints="NO" id="NzS-Gm-G8x">
-                                                    <rect key="frame" x="8" y="25" width="100" height="100"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6d-OR-73s">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="150.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tsla" translatesAutoresizingMaskIntoConstraints="NO" id="NzS-Gm-G8x">
+                                                            <rect key="frame" x="8" y="22" width="100" height="100"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="100" id="5iJ-4N-73m"/>
+                                                                <constraint firstAttribute="width" constant="100" id="CkY-7j-NkI"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Tesla Model S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfI-Fc-9ak">
+                                                            <rect key="frame" x="116" y="31" width="211" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$100000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4g-Aw-20v">
+                                                            <rect key="frame" x="116" y="53" width="211" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an amazing car good work from engineers from Tesla and good job Elon Musk" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5f-x9-Hpo">
+                                                            <rect key="frame" x="116" y="71" width="211" height="58"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="58" id="DNF-8W-oL8"/>
+                                                                <constraint firstAttribute="width" constant="211" id="E8L-PK-6bI"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="100" id="Tub-F0-uuX"/>
-                                                        <constraint firstAttribute="width" constant="100" id="VQ5-Qq-aKa"/>
+                                                        <constraint firstAttribute="trailing" secondItem="w4g-Aw-20v" secondAttribute="trailing" constant="16" id="12u-i1-J7G"/>
+                                                        <constraint firstItem="pfI-Fc-9ak" firstAttribute="top" secondItem="N6d-OR-73s" secondAttribute="top" constant="31" id="3Rq-rz-f7W"/>
+                                                        <constraint firstItem="n5f-x9-Hpo" firstAttribute="leading" secondItem="NzS-Gm-G8x" secondAttribute="trailing" constant="8" id="3m1-n2-WeD"/>
+                                                        <constraint firstAttribute="bottom" secondItem="w4g-Aw-20v" secondAttribute="bottom" constant="76.5" id="6NO-9y-4hj"/>
+                                                        <constraint firstAttribute="bottom" secondItem="n5f-x9-Hpo" secondAttribute="bottom" constant="21.5" id="Edj-3D-JvT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="pfI-Fc-9ak" secondAttribute="trailing" constant="16" id="FCt-if-kE5"/>
+                                                        <constraint firstItem="n5f-x9-Hpo" firstAttribute="leading" secondItem="NzS-Gm-G8x" secondAttribute="trailing" constant="8" id="LAo-qE-4zC"/>
+                                                        <constraint firstItem="w4g-Aw-20v" firstAttribute="leading" secondItem="NzS-Gm-G8x" secondAttribute="trailing" constant="8" id="RMP-ke-xoB"/>
+                                                        <constraint firstItem="NzS-Gm-G8x" firstAttribute="top" secondItem="N6d-OR-73s" secondAttribute="top" constant="22" id="RR1-Yy-mcQ"/>
+                                                        <constraint firstItem="w4g-Aw-20v" firstAttribute="top" secondItem="pfI-Fc-9ak" secondAttribute="bottom" id="Rhc-xb-YaJ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="NzS-Gm-G8x" secondAttribute="bottom" constant="28.5" id="WUU-H5-uVx"/>
+                                                        <constraint firstItem="w4g-Aw-20v" firstAttribute="top" secondItem="pfI-Fc-9ak" secondAttribute="bottom" id="Xjv-Xh-Ahw"/>
+                                                        <constraint firstItem="pfI-Fc-9ak" firstAttribute="leading" secondItem="NzS-Gm-G8x" secondAttribute="trailing" constant="8" id="dIx-H8-9bJ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="n5f-x9-Hpo" secondAttribute="trailing" constant="16" id="f6n-Fg-N8v"/>
+                                                        <constraint firstItem="NzS-Gm-G8x" firstAttribute="leading" secondItem="N6d-OR-73s" secondAttribute="leading" constant="8" id="fer-iH-wvP"/>
                                                     </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tesla Model S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfI-Fc-9ak">
-                                                    <rect key="frame" x="116" y="25" width="219" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="jgG-E7-bI4"/>
-                                                        <constraint firstAttribute="width" constant="219" id="uSZ-Je-nS3"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4g-Aw-20v">
-                                                    <rect key="frame" x="116" y="46" width="219" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="AiY-wh-tcf"/>
-                                                        <constraint firstAttribute="width" constant="219" id="SpV-aJ-t4i"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is an amazing car good work from engineers from Tesla and good job Elon Musk" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5f-x9-Hpo">
-                                                    <rect key="frame" x="116" y="67" width="219" height="58"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="58" id="fPX-tD-85M"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="w4g-Aw-20v" firstAttribute="top" secondItem="pfI-Fc-9ak" secondAttribute="bottom" id="4er-it-Hwz"/>
-                                                <constraint firstItem="w4g-Aw-20v" firstAttribute="leading" secondItem="NzS-Gm-G8x" secondAttribute="trailing" constant="8" id="73o-Mv-rKC"/>
-                                                <constraint firstItem="pfI-Fc-9ak" firstAttribute="trailing" secondItem="vxP-Ki-wss" secondAttribute="trailingMargin" id="CEx-B9-cRS"/>
-                                                <constraint firstItem="pfI-Fc-9ak" firstAttribute="leading" secondItem="NzS-Gm-G8x" secondAttribute="trailing" constant="8" id="GrW-Tv-zC4"/>
-                                                <constraint firstItem="n5f-x9-Hpo" firstAttribute="trailing" secondItem="vxP-Ki-wss" secondAttribute="trailingMargin" id="P52-1y-JeZ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="n5f-x9-Hpo" secondAttribute="bottom" constant="17" id="QiG-AK-Ysf"/>
-                                                <constraint firstItem="w4g-Aw-20v" firstAttribute="top" secondItem="pfI-Fc-9ak" secondAttribute="bottom" id="X1x-Bz-znS"/>
-                                                <constraint firstItem="NzS-Gm-G8x" firstAttribute="top" secondItem="vxP-Ki-wss" secondAttribute="topMargin" constant="17" id="Y8n-EC-aRm"/>
-                                                <constraint firstItem="n5f-x9-Hpo" firstAttribute="top" secondItem="w4g-Aw-20v" secondAttribute="bottom" id="YJQ-qb-OcX"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="NzS-Gm-G8x" secondAttribute="bottom" constant="17" id="ZAo-IC-YCm"/>
-                                                <constraint firstItem="n5f-x9-Hpo" firstAttribute="leading" secondItem="NzS-Gm-G8x" secondAttribute="trailing" constant="8" id="g1a-Vo-rSy"/>
-                                                <constraint firstItem="NzS-Gm-G8x" firstAttribute="leading" secondItem="vxP-Ki-wss" secondAttribute="leadingMargin" id="gTS-Ot-Fgz"/>
-                                                <constraint firstItem="pfI-Fc-9ak" firstAttribute="top" secondItem="vxP-Ki-wss" secondAttribute="topMargin" constant="17" id="q7B-iL-oTf"/>
-                                                <constraint firstItem="n5f-x9-Hpo" firstAttribute="top" secondItem="w4g-Aw-20v" secondAttribute="bottom" id="rlM-wu-P7Z"/>
-                                                <constraint firstItem="w4g-Aw-20v" firstAttribute="trailing" secondItem="vxP-Ki-wss" secondAttribute="trailingMargin" id="sNe-Lq-Bcq"/>
+                                                <constraint firstItem="N6d-OR-73s" firstAttribute="leading" secondItem="vxP-Ki-wss" secondAttribute="leading" id="I2Z-Iy-Myq"/>
+                                                <constraint firstItem="N6d-OR-73s" firstAttribute="top" secondItem="vxP-Ki-wss" secondAttribute="top" id="JKU-Ua-ua0"/>
+                                                <constraint firstAttribute="trailing" secondItem="N6d-OR-73s" secondAttribute="trailing" id="Qxh-OK-joN"/>
+                                                <constraint firstAttribute="bottom" secondItem="N6d-OR-73s" secondAttribute="bottom" id="wzl-Up-ri0"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -138,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--WishList-->
         <scene sceneID="MGZ-Vb-Qar">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0CZ-gp-Brl" sceneMemberID="viewController">
+                <navigationController title="WishList" automaticallyAdjustsScrollViewInsets="NO" id="0CZ-gp-Brl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AUC-56-DN8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
