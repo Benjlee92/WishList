@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B5514CA71EC56DC800503EE1 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5514CA61EC56DC800503EE1 /* MaterialView.swift */; };
+		B5514CA91EC5728800503EE1 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5514CA81EC5728800503EE1 /* ItemCell.swift */; };
 		B5C1B2271EC5611C008B136A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C1B2261EC5611C008B136A /* AppDelegate.swift */; };
 		B5C1B2291EC5611C008B136A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C1B2281EC5611C008B136A /* MainVC.swift */; };
 		B5C1B22C1EC5611D008B136A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C1B22A1EC5611D008B136A /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		B5514CA61EC56DC800503EE1 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		B5514CA81EC5728800503EE1 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		B5C1B2231EC5611C008B136A /* WishList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WishList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C1B2261EC5611C008B136A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C1B2281EC5611C008B136A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				B5514CA61EC56DC800503EE1 /* MaterialView.swift */,
+				B5514CA81EC5728800503EE1 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5514CA91EC5728800503EE1 /* ItemCell.swift in Sources */,
 				B5C1B2291EC5611C008B136A /* MainVC.swift in Sources */,
 				B5C1B2271EC5611C008B136A /* AppDelegate.swift in Sources */,
 				B5C1B2491EC568FD008B136A /* ItemType+CoreDataClass.swift in Sources */,
